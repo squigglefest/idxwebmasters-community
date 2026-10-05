@@ -1,0 +1,23 @@
+name: Request a feature or workflow
+description: Help shape an IDX, MCP, or WordPress tool
+labels: [feature-request, needs-review]
+body:
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Platform
+      options: [iHomefinder, IDX Broker, WordPress, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What would you like to accomplish?
+      description: Explain what you do now and what a useful outcome would look like.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Public links or examples, without credentials or private customer information.

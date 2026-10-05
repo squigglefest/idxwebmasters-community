@@ -1,0 +1,26 @@
+name: Suggest a tool
+description: Submit an MCP server, WordPress tool, or useful integration for review
+labels: [tool-submission, needs-review]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Official tool URL
+    validations:
+      required: true
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Platform
+      options: [iHomefinder, IDX Broker, WordPress, Other]
+  - type: textarea
+    id: use
+    attributes:
+      label: What does the tool do?
+    validations:
+      required: true
+  - type: input
+    id: relationship
+    attributes:
+      label: Your relationship to the tool
+      description: Creator, user, partner, or other.
